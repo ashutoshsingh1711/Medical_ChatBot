@@ -44,21 +44,25 @@ Make sure you have Python 3.8 or higher installed. Also, ensure you have `pip` f
    cd medical-chatbot
 2. Create a virtual environment:
 
-  python -m venv venv
-  source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```bash
+     python -m venv venv
+     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 3. Install the required packages:
 
-   pip install -r requirements.txt
+   ```bash
+      pip install -r requirements.txt
 
 4.  Create a .env file in the project root and add your API keys:
 
-    PINECONE_API_KEY=<your_pinecone_api_key>
-    COHERE_API_KEY=<your_cohere_api_key>
+      ```bash
+       PINECONE_API_KEY=<your_pinecone_api_key>
+       COHERE_API_KEY=<your_cohere_api_key>
     
 5.  Start the Flask application:
 
-    python app.py
+      ```bash
+         python app.py
 
 Access the Chatbot: Open your web browser and go to http://127.0.0.1:8080/.
 
@@ -66,6 +70,7 @@ Interact with the Chatbot: Type your medical question in the input field and cli
 
 Directory Structure
 
+```bash
 medical-chatbot/
 ├── app.py                     # Main Flask application file
 ├── src/
